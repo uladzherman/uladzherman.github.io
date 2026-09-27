@@ -36,7 +36,7 @@
 
   <main class="wrap">
     <ul class="trainers">
-      <li>
+      <li class="trainer-item">
         <a class="trainer" href="/phys/">
           <span class="trainer__badge">Физика</span>
           <h2 class="trainer__title">Тренажёр по физике</h2>
@@ -48,9 +48,14 @@
             <li>Повторение (SRS)</li>
           </ul>
           <span class="trainer__cta">Открыть →</span>
+          <span class="preview" data-src="/phys/" aria-hidden="true">
+            <span class="preview__label">Тренажёр по физике</span>
+            <span class="preview__cta">Открыть тренажёр →</span>
+          </span>
         </a>
+        <button class="preview-toggle" type="button" aria-pressed="false">Превью</button>
       </li>
-      <li>
+      <li class="trainer-item">
         <a class="trainer" href="/stereometry/">
           <span class="trainer__badge">Геометрия</span>
           <h2 class="trainer__title">Тренажёр по стереометрии</h2>
@@ -60,9 +65,16 @@
             <li>Проверка знаний</li>
           </ul>
           <span class="trainer__cta">Открыть →</span>
+          <span class="preview" data-src="/stereometry/" aria-hidden="true">
+            <span class="preview__label">Тренажёр по стереометрии</span>
+            <span class="preview__cta">Открыть тренажёр →</span>
+          </span>
         </a>
+        <button class="preview-toggle" type="button" aria-pressed="false">Превью</button>
       </li>
     </ul>
   </main>
+
+  <script defer src="script.js"></script>
 </body>
 </html>
